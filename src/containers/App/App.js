@@ -6,7 +6,7 @@ import {fetchAllCards} from '../../helpers/apiCalls';
 import {houseCleaner} from '../../helpers/dataCleaner';
 import CardsContainer from '../CardsContainer/CardsContainer';
 
-class App extends Component {
+export class App extends Component {
   constructor() {
     super();
     this.state = {

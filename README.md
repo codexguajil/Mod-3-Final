@@ -40,3 +40,4 @@ If you've looked at the house objects coming in, you might have noticed the `swo
 This data should not be fetched until the user clicks on the card. You can
 implement this however you like.  Also, you shouldn't
 need to make extra fetch calls, so once you've fetched the sworn members for a house once, you shouldn't need to do that again.
+# Mod-3-Final

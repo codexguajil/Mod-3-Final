@@ -1,6 +1,10 @@
 .cards-container {
+  background: hsla(0, 0, 10, 1);
+  border-radius: 20px;
   display: inline-flex;
   flex-wrap: wrap;
+  font-size: 1.1em;
   justify-content: space-between;
+  padding: 10px;
   width: 90%;
 }

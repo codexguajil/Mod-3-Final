@@ -1,0 +1,10 @@
+@import './containers/App/App';
+@import './containers/CardsContainer/CardsContainer';
+@import './containers/Cards/Cards';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #555;
+  text-shadow: 0px 0px 21px #999;
+}

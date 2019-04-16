@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
 import { connect } from 'react-redux';
 import {storeCards} from '../../actions';
 import {fetchAllCards} from '../../helpers/apiCalls';
+import {houseCleaner} from '../../helpers/dataCleaner';
 import CardsContainer from '../CardsContainer/CardsContainer';
 
 class App extends Component {
@@ -14,17 +14,27 @@ class App extends Component {
     }
   }
 
-
   componentDidMount = async () => {
+    this.setState({isLoading: true})
+    await this.fetchCards()
+    this.setState({isLoading: false})
+  }
+
+  fetchCards = async () => {
     const cards = await fetchAllCards()
-    console.log(cards)
-    this.props.storeCards(cards)
+    const cleanCards = houseCleaner(cards)
+    console.log(cleanCards)
+    this.props.storeCards(cleanCards)
   }
 
   render() {
+    const {isLoading} = this.state
     return (
       <div className='App'>
         <div className='App-header'>
+        {isLoading &&
+          <div id="loading-gif"></div>
+        }
           <img src={logo} className='App-logo' alt='logo' />
           <h2>Welcome to Westerosss</h2>
         </div>

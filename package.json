@@ -30,5 +30,14 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/containers/App/App.js",
+      "src/containers/Cards/Cards.js",
+      "src/containers/CardsContainer/CardsContainer.js",
+      "src/actions/index.js",
+      "src/reducers/cards.js"
+    ]
+  }
 }

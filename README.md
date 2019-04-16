@@ -1,7 +1,7 @@
 ## Ice and Fire Redux Challenge
 
 ### Preview
-<img width="1436" alt="Screen Shot 2019-04-16 at 11 51 05 AM" src="https://user-images.githubusercontent.com/20582868/56232492-21093080-603e-11e9-86ce-0f814854c503.png">
+<img width="1300" alt="Screen Shot 2019-04-16 at 11 58 49 AM" src="https://user-images.githubusercontent.com/20582868/56232878-05525a00-603f-11e9-9618-27295319c7a1.png">
 
 ### Setup
   This application is built from create-react-app
